@@ -4,6 +4,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Login from './pages/Login';
 import Test from './pages/Test';
+import LoginScreen from './pages/LoginScreen';
+import NewUserStep1 from './pages/NewUserStep1';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +21,16 @@ const Main = () => {
                 name="Test"
                 component={Test}
                 options={{ title: 'Test' }}
+            />
+            <Stack.Screen
+                name="LoginScreen"
+                component={LoginScreen}
+                options={{ title: 'Login' }}
+            />
+            <Stack.Screen
+                name="NewUserStep1"
+                component={NewUserStep1}
+                options={{ title: 'New User - Step 1 -' }}
             />
         </Stack.Navigator>
     )
