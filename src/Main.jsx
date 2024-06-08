@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Test from './pages/Test';
 import LoginScreen from './pages/LoginScreen';
 import NewUserStep1 from './pages/NewUserStep1';
+import NewUserStep2 from './pages/NewUserStep2';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +32,11 @@ const Main = () => {
                 name="NewUserStep1"
                 component={NewUserStep1}
                 options={{ title: 'New User - Step 1 -' }}
+            />
+            <Stack.Screen
+                name="NewUserStep2"
+                component={NewUserStep2}
+                options={{ title: 'New User - Step 2 -' }}
             />
         </Stack.Navigator>
     )
