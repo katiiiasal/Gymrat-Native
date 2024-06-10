@@ -7,6 +7,7 @@ import Test from './pages/Test';
 import LoginScreen from './pages/LoginScreen';
 import NewUserStep1 from './pages/NewUserStep1';
 import NewUserStep2 from './pages/NewUserStep2';
+import BodyMeasurements from './pages/BodyMeasurements';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,12 +32,17 @@ const Main = () => {
             <Stack.Screen
                 name="NewUserStep1"
                 component={NewUserStep1}
-                options={{ title: 'New User - Step 1 -' }}
+                options={{ title: 'Step 1' }}
             />
             <Stack.Screen
                 name="NewUserStep2"
                 component={NewUserStep2}
-                options={{ title: 'New User - Step 2 -' }}
+                options={{ title: 'Step 2' }}
+            />
+            <Stack.Screen
+                name="BodyMeasurements"
+                component={BodyMeasurements}
+                options={{ title: 'Body Measurements' }}
             />
         </Stack.Navigator>
     )
