@@ -4,15 +4,15 @@ import { View, TextInput, Button, Alert, StyleSheet, Image, ScrollView, Text } f
 const BodyMeasurements = ({ route, navigation }) => {
   const { userData } = route.params;
   const [medidas, setMedidas] = useState({
-    neck: '',
-    chest: '',
-    waist: '',
-    glutes: '',
-    calfs: '',
-    tighs: '',
-    triceps: '',
-    forearm: '',
-    biceps: '',
+    "1. neck": '',
+    "2. chest": '',
+    "3. waist": '',
+    "4. glutes": '',
+    "5. calves": '',
+    "6. thighs": '',
+    "7. triceps": '',
+    "8. forearm": '',
+    "9. biceps": '',
   });
 
   const handleInputChange = (name, value) => {
